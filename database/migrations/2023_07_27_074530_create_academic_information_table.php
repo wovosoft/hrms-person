@@ -8,6 +8,7 @@ use Wovosoft\BdAcademicComponents\Models\AcademicDiscipline;
 use Wovosoft\BdAcademicComponents\Models\University;
 use Wovosoft\HrmsPerson\Enums\Exam;
 use Wovosoft\HrmsPerson\Enums\ResultType;
+use Wovosoft\HrmsPerson\Models\AcademicInformation;
 use Wovosoft\HrmsPerson\Models\Person;
 
 return new class extends Migration {
@@ -16,7 +17,7 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('academic_information', function (Blueprint $table) {
+        Schema::create((new AcademicInformation)->getTable(), function (Blueprint $table) {
             $table->id();
             $table->foreignId("person_id")
                 ->references('id')
@@ -60,6 +61,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('academic_information');
+        Schema::dropIfExists((new AcademicInformation)->getTable());
     }
 };

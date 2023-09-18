@@ -120,9 +120,4 @@ class Person extends Model
     {
         return $this->hasMany(Contact::class);
     }
-
-    public function workHistories(): HasMany
-    {
-        return $this->hasMany(WorkHistory::class);
-    }
 }

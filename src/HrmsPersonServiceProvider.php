@@ -9,7 +9,8 @@ class HrmsPersonServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
-        $package->name('hrms-person')
+        $package
+            ->name('hrms-person')
             ->hasConfigFile()
             ->runsMigrations();
 

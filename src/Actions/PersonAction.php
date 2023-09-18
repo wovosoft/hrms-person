@@ -47,10 +47,6 @@ class PersonAction implements ActionInterface
         return new IdentificationsAction(person: $this->person);
     }
 
-    public function workHistories(): WorkHistoriesAction
-    {
-        return new WorkHistoriesAction(person: $this->person);
-    }
 
     public function academicInformation(): AcademicInformationAction
     {

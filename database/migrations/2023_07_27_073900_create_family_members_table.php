@@ -5,6 +5,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Wovosoft\HrmsPerson\Enums\Relation;
+use Wovosoft\HrmsPerson\Models\FamilyMember;
 use Wovosoft\HrmsPerson\Models\Person;
 
 return new class extends Migration {
@@ -13,7 +14,7 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('family_members', function (Blueprint $table) {
+        Schema::create((new FamilyMember)->getTable(), function (Blueprint $table) {
             $table->id();
             $table->foreignId("person_id")
                 ->references('id')
@@ -37,6 +38,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('family_members');
+        Schema::dropIfExists((new FamilyMember)->getTable());
     }
 };

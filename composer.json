@@ -1,0 +1,40 @@
+{
+    "name": "wovosoft/hrms-person",
+    "description": "HRMS Person Module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Narayan Adhikary",
+            "email": "wovosoft@gmail.com",
+            "homepage": "https://github.com/wovosoft"
+        }
+    ],
+    "homepage": "https://github.com/wovosoft/hrms-person",
+    "keywords": [
+        "Laravel",
+        "HrmsPerson"
+    ],
+    "require": {
+        "wovosoft/bd-academic-components": "^0.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wovosoft\\HrmsPerson\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wovosoft\\HrmsPerson\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wovosoft\\HrmsPerson\\HrmsPersonServiceProvider"
+            ],
+            "aliases": {
+                "HrmsPerson": "Wovosoft\\HrmsPerson\\Facades\\HrmsPerson"
+            }
+        }
+    }
+}

@@ -21,7 +21,6 @@ use Wovosoft\HrmsPerson\Traits\HasEmployeeTrait;
  * @property Countries|null $issuing_country
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @property-read \Wovosoft\BkbHrmsCore\Models\Employee|null $employee
  * @property-read \Wovosoft\HrmsPerson\Models\Person $person
  * @method static \Illuminate\Database\Eloquent\Builder|Identification newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Identification newQuery()

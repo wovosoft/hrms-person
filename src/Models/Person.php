@@ -30,11 +30,8 @@ use Wovosoft\HrmsPerson\Enums\Religion;
  * @property-read int|null $academic_information_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Wovosoft\HrmsPerson\Models\Address> $addresses
  * @property-read int|null $addresses_count
- * @property-read \Illuminate\Database\Eloquent\Collection<int, BankingDiploma> $bankingDiplomas
- * @property-read int|null $banking_diplomas_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Wovosoft\HrmsPerson\Models\Contact> $contacts
  * @property-read int|null $contacts_count
- * @property-read Employee|null $employee
  * @property-read \Illuminate\Database\Eloquent\Collection<int, Person> $familyMemberPersons
  * @property-read int|null $family_member_persons_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Wovosoft\HrmsPerson\Models\FamilyMember> $familyMembers
@@ -44,8 +41,6 @@ use Wovosoft\HrmsPerson\Enums\Religion;
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Wovosoft\HrmsPerson\Models\PersonPhoto> $photos
  * @property-read int|null $photos_count
  * @property-read \Wovosoft\HrmsPerson\Models\PersonPhoto|null $profilePhoto
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Wovosoft\HrmsPerson\Models\WorkHistory> $workHistories
- * @property-read int|null $work_histories_count
  * @method static \Illuminate\Database\Eloquent\Builder|Person newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Person newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Person query()

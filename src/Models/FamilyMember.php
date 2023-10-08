@@ -18,7 +18,6 @@ use Wovosoft\HrmsPerson\Traits\HasEmployeeTrait;
  * @property int $related_person_id
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @property-read \Wovosoft\BkbHrmsCore\Models\Employee|null $employee
  * @property-read \Wovosoft\HrmsPerson\Models\Person $person
  * @property-read \Wovosoft\HrmsPerson\Models\Person $relatedPerson
  * @method static \Illuminate\Database\Eloquent\Builder|FamilyMember newModelQuery()
@@ -34,7 +33,6 @@ use Wovosoft\HrmsPerson\Traits\HasEmployeeTrait;
  */
 class FamilyMember extends Model
 {
-    use HasFactory;
     use HasEmployeeTrait;
 
     protected $casts = [

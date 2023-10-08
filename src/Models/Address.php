@@ -40,7 +40,6 @@ use Wovosoft\HrmsPerson\Traits\HasEmployeeTrait;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read District|null $district
  * @property-read Division|null $division
- * @property-read \Wovosoft\BkbHrmsCore\Models\Employee|null $employee
  * @property-read \Wovosoft\HrmsPerson\Models\Person $person
  * @property-read Union|null $union
  * @property-read Upazila|null $upazila

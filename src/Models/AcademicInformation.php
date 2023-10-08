@@ -30,7 +30,6 @@ use Wovosoft\HrmsPerson\Traits\HasEmployeeTrait;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read AcademicBoard|null $academicBoard
  * @property-read AcademicDiscipline|null $academicDiscipline
- * @property-read \Wovosoft\BkbHrmsCore\Models\Employee|null $employee
  * @property-read \Wovosoft\HrmsPerson\Models\Person $person
  * @property-read University|null $university
  * @method static \Illuminate\Database\Eloquent\Builder|AcademicInformation newModelQuery()

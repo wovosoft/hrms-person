@@ -19,6 +19,7 @@
     },
     "autoload": {
         "psr-4": {
+            "Wovosoft\\HrmsPerson\\Factories\\": "database/factories/",
             "Wovosoft\\HrmsPerson\\": "src/"
         }
     },
